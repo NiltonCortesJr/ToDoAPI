@@ -1,13 +1,15 @@
 import express from "express";
 import * as dotenv from "dotenv";
+import Tarefas from "./src/controllers/Tarefas.js"
+
 const app = express()
 
 dotenv.config()
 
 const port = process.env.PORT || 3000
+
     app.listen(port, () => {
-    console.log(`http://localhost:${port}`)
+    console.log(`Sucesso na Conexão ao Servidor em http://localhost:${port}`)
 })
 
-import teste from "./controllers/teste-controller.js"
-teste(app);
+Tarefas.routers(app)
