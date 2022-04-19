@@ -1,4 +1,4 @@
-# Porjeto ToDoAPI
+# Projeto ToDoAPI
 Repositório criado com fim educacional.
 
 Aprendendo como construir uma API.
